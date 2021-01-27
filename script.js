@@ -37,14 +37,22 @@ const plusBtn = document.getElementById("plus-btn").addEventListener("click", fu
 
 const minusBtn = document.getElementById("minus-btn").addEventListener("click", function () {
     addIphone = addIphone - 1;
+    if(addIphone<0)
+    {
+        addIphone=0;
+    }
     document.getElementById("iphone-input").value = addIphone;
     addPrice = addPrice - 1219;
+    if(addPrice<0)
+    {
+        addPrice=0;
+    }
     document.getElementById("total-price").innerText = addPrice;
 
     const subTotalMinusString = document.getElementById("sub-total").innerText;
     subTotalPrice = parseFloat(subTotalMinusString);
-    document.getElementById("sub-total").innerText = subTotalPrice - 1219;
- 
+    const sub = document.getElementById("sub-total").innerText = subTotalPrice - 1219;
+    
 
     const totalPriceStringMinusIphone = document.getElementById("final-price").innerText
     finalPrice = parseFloat(totalPriceStringMinusIphone);
