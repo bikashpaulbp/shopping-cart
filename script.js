@@ -6,7 +6,8 @@ var addCover;
 var addCoverPrice;
 
 var subTotalPrice;
-var finalPrice 
+var finalPrice;
+
 
 
 
@@ -23,11 +24,14 @@ const plusBtn = document.getElementById("plus-btn").addEventListener("click", fu
 
     const subTotalPlusString = document.getElementById("sub-total").innerText;
     subTotalPrice = parseFloat(subTotalPlusString);
-    document.getElementById("sub-total").innerText = subTotalPrice + addPrice;
+    document.getElementById("sub-total").innerText = subTotalPrice + 1219;
 
     const totalPriceStringPlusIphone = document.getElementById("final-price").innerText
     finalPrice = parseFloat(totalPriceStringPlusIphone);
-    document.getElementById("final-price").innerText = finalPrice + addPrice;
+    document.getElementById("final-price").innerText = subTotalPrice + 1219;
+
+
+   
 })
 
 
@@ -39,12 +43,12 @@ const minusBtn = document.getElementById("minus-btn").addEventListener("click", 
 
     const subTotalMinusString = document.getElementById("sub-total").innerText;
     subTotalPrice = parseFloat(subTotalMinusString);
-    document.getElementById("sub-total").innerText = subTotalPrice - addPrice;
+    document.getElementById("sub-total").innerText = subTotalPrice - 1219;
  
 
     const totalPriceStringMinusIphone = document.getElementById("final-price").innerText
     finalPrice = parseFloat(totalPriceStringMinusIphone);
-    document.getElementById("final-price").innerText = finalPrice - addPrice;
+    document.getElementById("final-price").innerText = subTotalPrice - 1219;
         
 })
 
@@ -61,12 +65,12 @@ const plusCoverBtn = document.getElementById("plus-cover-btn").addEventListener(
 
     const subTotalCoverPlusString = document.getElementById("sub-total").innerText;
     subTotalPrice = parseFloat(subTotalCoverPlusString);
-    document.getElementById("sub-total").innerText = subTotalPrice + addCoverPrice;
+    document.getElementById("sub-total").innerText = subTotalPrice + 59;
 
 
     const totalPriceStringPlusCover = document.getElementById("final-price").innerText
     finalPrice = parseFloat(totalPriceStringPlusCover);
-    document.getElementById("final-price").innerText = finalPrice + addCoverPrice;
+    document.getElementById("final-price").innerText = subTotalPrice + 59;
 })
 
 
@@ -79,12 +83,12 @@ const minusCoverBtn = document.getElementById("minus-cover-btn").addEventListene
 
     const subTotalCoverMinusString = document.getElementById("sub-total").innerText;
     subTotalPrice = parseFloat(subTotalCoverMinusString);
-    document.getElementById("sub-total").innerText = subTotalPrice - addCoverPrice;
+    document.getElementById("sub-total").innerText = subTotalPrice - 59;
  
         
     const totalPriceStringMinusCover = document.getElementById("final-price").innerText
     finalPrice = parseFloat(totalPriceStringMinusCover);
-    document.getElementById("final-price").innerText = finalPrice - addCoverPrice;
+    document.getElementById("final-price").innerText = subTotalPrice - 59;
 })
 
 
